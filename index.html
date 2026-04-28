@@ -1,67 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>End of Days AI</title>
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0a0a0a;
-  color: #eaeaea;
-  text-align: center;
-}
-.container {
-  max-width: 800px;
-  margin: auto;
-  padding: 80px 20px;
-}
-h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
-}
-p {
-  color: #aaa;
-  line-height: 1.6;
-}
-button {
-  background: #ff0033;
-  border: none;
-  color: white;
-  padding: 15px 30px;
-  margin-top: 20px;
-  font-size: 1em;
-  cursor: pointer;
-}
-input {
-  padding: 12px;
-  width: 60%;
-  margin-top: 20px;
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>End of Days AI</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #050505;
+      color: #f2f2f2;
+    }
+
+    .wrap {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 20px;
+      color: #aaa;
+      font-size: 14px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .logo {
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 120px 0 90px;
+      text-align: left;
+    }
+
+    .kicker {
+      color: #ff0033;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(44px, 8vw, 86px);
+      line-height: 0.95;
+      margin: 0 0 24px;
+      max-width: 900px;
+    }
+
+    .subtitle {
+      font-size: 22px;
+      line-height: 1.5;
+      color: #bdbdbd;
+      max-width: 680px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 34px;
+      background: #ff0033;
+      color: #fff;
+      text-decoration: none;
+      padding: 16px 26px;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+
+    section {
+      border-top: 1px solid #222;
+      padding: 70px 0;
+    }
+
+    h2 {
+      font-size: 34px;
+      margin: 0 0 20px;
+    }
+
+    p {
+      color: #b7b7b7;
+      line-height: 1.7;
+      font-size: 18px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .card {
+      border: 1px solid #242424;
+      background: #0b0b0b;
+      padding: 24px;
+      border-radius: 8px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #fff;
+    }
+
+    .signup {
+      background: linear-gradient(135deg, #100000, #050505);
+      border: 1px solid #2b2b2b;
+      padding: 36px;
+      border-radius: 10px;
+    }
+
+    input {
+      width: min(100%, 420px);
+      padding: 15px;
+      background: #111;
+      border: 1px solid #333;
+      color: #fff;
+      font-size: 16px;
+      margin-right: 8px;
+    }
+
+    button {
+      padding: 15px 22px;
+      border: 0;
+      background: #ff0033;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    footer {
+      color: #777;
+      padding: 40px 0;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding-top: 80px;
+      }
+
+      input, button {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 8px 0;
+      }
+    }
+  </style>
 </head>
+
 <body>
+  <div class="wrap">
+    <header>
+      <div class="logo">End of Days AI</div>
+      <div>Signal / Tools / Survival</div>
+    </header>
 
-<div class="container">
-  <h1>The End of the Old World Has Begun.</h1>
-  <p>AI isn’t coming. It’s already here—and it’s rewriting everything.</p>
-  <button>Enter</button>
-</div>
+    <main>
+      <div class="hero">
+        <div class="kicker">The machine age has crossed the threshold</div>
+        <h1>The end of the old world has begun.</h1>
+        <p class="subtitle">
+          AI is rewriting work, creativity, power, truth, and survival.
+          End of Days AI tracks what matters before everyone else catches up.
+        </p>
+        <a class="button" href="#join">Join the signal</a>
+      </div>
 
-<div class="container">
-  <p>
-  End of Days AI is a signal.<br><br>
-  We track the collapse of old systems—work, knowledge, creativity—and what replaces them.<br><br>
-  No hype. No fluff. Just what actually matters.
-  </p>
-</div>
+      <section>
+        <h2>What is this?</h2>
+        <p>
+          End of Days AI is a field guide for the age of intelligent machines.
+          Not hype. Not fearbait. Just sharp analysis, useful tools, and early
+          signals about how AI is changing the world.
+        </p>
+      </section>
 
-<div class="container">
-  <h2>Stay ahead of the collapse.</h2>
-  <input type="email" placeholder="Your email">
-  <br>
-  <button>Join the signal</button>
-</div>
+      <section>
+        <h2>What we track</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>AI Tools</h3>
+            <p>The tools worth using, ignoring, or watching closely.</p>
+          </div>
+          <div class="card">
+            <h3>Disruption</h3>
+            <p>How AI changes jobs, media, education, money, and power.</p>
+          </div>
+          <div class="card">
+            <h3>Signals</h3>
+            <p>Small shifts that reveal where the next wave is headed.</p>
+          </div>
+          <div class="card">
+            <h3>Survival</h3>
+            <p>Practical ways to adapt before the ground moves again.</p>
+          </div>
+        </div>
+      </section>
 
+      <section id="join">
+        <div class="signup">
+          <h2>Stay ahead of the collapse.</h2>
+          <p>Get early updates when the signal goes live.</p>
+          <form>
+            <input type="email" placeholder="you@email.com" />
+            <button type="submit">Join</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © End of Days AI
+    </footer>
+  </div>
 </body>
 </html>
